@@ -1,0 +1,120 @@
+/* ========== HEADER ========== */
+
+.header{
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: var(--body-color);
+   padding: 2rem 0;
+}
+
+.nav__logo{
+   width: 12rem;
+}
+
+.nav__toggle{
+   cursor: pointer;
+   padding: 5px 0;
+}
+
+/* === SHOW MENU === */
+
+.nav__menu.show-menu{
+   right: 0;
+}
+
+@media screen and (max-width: 768px){
+   .nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   
+   .nav__menu{
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100%;
+      background-color: var(--first-color);
+      padding-top: 10rem;
+      box-shadow: 0 0 5px hsl(0, 0%, 0%, .3);
+      transition: .3s;
+   }
+
+   .nav__list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 4rem;
+      text-align: center;
+   }
+
+   .nav__link{
+      position: relative;
+      font-weight: var(--font-medium);
+      text-transform: uppercase;
+      letter-spacing: .7px;
+      color: var(--white-color-alt);
+      padding: 5px;
+   }
+
+   .nav__link::before{
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      border-radius: 50px;
+      background: var(--white-color-alt);
+      transition: .3s;
+   }
+
+   .nav__link:hover::before{
+      width: 100%;
+   }
+
+   .nav__close{
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      cursor: pointer;
+   }
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (min-width: 769px){
+   .nav__close,
+   .nav__toggle{
+      display: none;
+   }
+
+   .nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .nav__list{
+      display: flex;
+      column-gap: 4rem;
+   }
+
+   .nav__link{
+      font-weight: var(--font-bold);
+      text-transform: uppercase;
+      letter-spacing: .7px;
+      color: var(--title-color);
+      padding: 5px;
+   }
+
+   .nav__link:hover{
+      color: var(--first-color);
+   }
+
+   .nav__logo{
+      width: 16rem;
+   }
+}

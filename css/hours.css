@@ -1,0 +1,87 @@
+/* ========== HOURS ========== */
+
+.hours__section{
+   background: url('../img/break-service.png');
+   background-position: center;
+   padding: 2rem 0;
+}
+
+.hours{
+   grid-template-columns: 1fr;
+   justify-content: center;
+}
+
+.hours__description{
+   text-align: center;
+   color: var(--white-color-alt);
+}
+
+.hours__title{
+   font-family: var(--title-font);
+   font-size: var(--h2-font-size);
+   font-weight: var(--font-bold);
+   text-transform: uppercase;
+   line-height: 1.5;
+}
+
+.hours__subtitle{
+   font-size: var(--h3-font-size);
+   margin: .5rem 0 3rem 0;
+}
+
+.hours__button{
+   background-color: var(--second-color);
+   color: var(--title-color);
+   max-width: 33rem;
+   margin-inline: auto;
+}
+
+.hours__button:hover{
+   background-color: hsl(54, 100%, 65%);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (min-width: 768px){
+   .hours{
+      width: auto;
+      grid-template-columns: 1.4fr 1fr;
+      column-gap: 2.4rem;
+   }
+
+   .hours__description{
+      text-align: left ;
+   }
+
+   .hours__subtitle{
+      margin: 0;
+   }
+
+   .hours__section{
+      padding: 6rem 0;
+   }
+}
+
+@media screen and (max-width: 340px) {
+   .hours__button {
+      padding: 1.5rem 1.5rem;
+   }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,133 @@
+/* ========== SERVICES ========== */
+
+.services{
+   background-color: var(--container-color);
+   padding: 6rem 0 4rem 0;
+}
+
+.services__description{
+   max-width: 52.5rem;
+
+   margin-bottom: 6rem;
+   margin-inline: auto;
+}
+
+.services__subtitle,
+.services__title{
+   text-transform: uppercase;
+}
+
+.services__main{
+   grid-template-columns: 1fr;
+   max-width: 33.5rem;
+   row-gap: 4rem;
+   
+   padding-bottom: 4rem;
+   margin-bottom: 4rem;
+   margin-inline: auto;
+
+   border-bottom: 1px solid hsla(217, 55%, 46%, 0.2);
+}
+
+.services__img{
+   height: 22.5rem;
+   object-fit: cover;
+}
+
+.services__item{
+   background-color: var(--white-color);
+   box-shadow: 0 8px 10px -5px hsl(0, 0%, 0%, .05);
+}
+
+.services__info{
+   padding: 2rem 1rem;
+}
+
+.services__list{
+   margin-bottom: 4rem;
+
+   display: grid;
+}
+
+.services__list-items{
+   grid-template-columns: 1fr;
+   row-gap: 2rem;
+
+   justify-self: center;
+}
+
+.services__list-item{
+   display: flex;
+   align-items: center;
+   column-gap: 2.4rem;
+}
+
+.circle{
+   background-color: var(--white-color);
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   box-shadow: 0 0 10px 3px hsl(0, 0%, 0%, .03);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.services__icon{
+   width: 2.6rem;
+}
+
+.list__paragraph{
+   font-family: var(--body-font);
+   font-weight: var(--font-medium);
+   text-transform: uppercase;
+   color: var(--title-color);
+   flex: 1;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (min-width: 576px){
+   .services__main{
+      grid-template-columns: 1fr 1fr;
+      max-width: 100%;
+      gap: 2.5rem;
+      padding-bottom: 6rem;
+      margin-bottom: 6rem;
+      max-width: auto;
+   }
+
+   .services__list-items{
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2.4rem;
+   }
+
+   .services__paragraph{
+      max-width: 66rem;
+      margin-inline: auto;
+      margin-bottom: 4rem;      
+   }
+}
+
+@media screen and (min-width: 768px){
+   .services__main{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+   }
+
+   .services__info{
+      padding: 3rem 2rem;
+   }
+}
+
+@media screen and (min-width: 1200px){
+   .services__list-items{
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 3rem;
+   }
+
+   .services__list{
+      margin-bottom: 8rem;
+   }
+}

@@ -1,0 +1,52 @@
+/* ========== GALLERY ========== */
+
+.gallery{
+   padding-top: 6rem;
+   overflow: auto;
+}
+
+.gallery__description{
+   max-width: 52.5rem;
+
+   margin-bottom: 4rem;
+   margin-inline: auto;
+}
+
+.gallery__subtitle,
+.gallery__title{
+   text-transform: uppercase;
+}
+
+.gallery__images{
+   display: flex;
+   gap: 2rem;
+   overflow-x: auto;
+   /* grid-template-columns: repeat(auto-fit, 33rem);
+   justify-content: center;
+   gap: 2rem; */
+}
+
+.image__item {
+   flex: 1;
+   min-width: 24rem;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (min-width: 768px){
+   .gallery__images{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 33rem);
+      justify-content: center;
+      column-gap: 2rem;
+   }
+
+   .image__item {
+      min-width: initial;
+   }
+
+   .gallery__description {
+      margin-bottom: 6rem;
+   }
+}
+

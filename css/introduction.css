@@ -1,0 +1,22 @@
+/* ========== INTRODUCTION ========== */
+
+.introduction__img{
+   height: 30rem;
+   object-fit: cover;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (min-width: 768px){
+   .introduction__img{
+      height: 50rem;
+   }
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (min-width: 769px){
+   .introduction__img{
+      height: 74rem;
+   }
+}
