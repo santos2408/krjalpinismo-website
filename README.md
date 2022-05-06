@@ -13,9 +13,9 @@
 </p>
 
 <p align="center">
-  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=3567B6&labelColor=3B3B89" alt="License">
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=3567B6" alt="License">
   
-  <img src="https://img.shields.io/github/forks/santos2408/digital-agency-website?color=3567B6&label=Forks&labelColor=3B3B89" alt="Forks">
+  <img src="https://img.shields.io/github/forks/santos2408/digital-agency-website?color=3567B6&label=Forks" alt="Forks">
 
   <img src="https://img.shields.io/github/stars/santos2408/digital-agency-website?color=3567B6&label=Stars" alt="Stars">
 </p>
