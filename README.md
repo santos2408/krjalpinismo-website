@@ -1,5 +1,5 @@
 <h1 align="center">
-  Bikcraft - Bicicletas Personalizadas
+  KRJ - Alpinismo Industrial
 </h1>
 
 <p align="center">
